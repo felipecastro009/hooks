@@ -5,7 +5,7 @@
   description: "Detecta Maven/Gradle e executa 'spotless:apply' / 'spotlessApply'."
   files: \.(java|xml|gradle|kts)$
 
-- id: test
+- id: run_tests
   name: Run project tests (Maven/Gradle)
   entry: java/run_tests.py
   language: script
