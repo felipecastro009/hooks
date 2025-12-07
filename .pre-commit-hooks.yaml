@@ -1,15 +1,14 @@
-# NO REPO: https://github.com/felipecastro009/hooks
 - id: spotless_apply
   name: Spotless apply (Java)
-  entry: python3 java/spotless_apply.py
-  language: system
+  entry: java/spotless_apply.py
+  language: script
   description: "Detecta Maven/Gradle e executa 'spotless:apply' / 'spotlessApply'."
   files: \.(java|xml|gradle|kts)$
 
 - id: test
   name: Run project tests (Maven/Gradle)
-  entry: python3 java/run_tests.py
-  language: system
+  entry: java/run_tests.py
+  language: script
   args: ["--task", "test"]
   description: "Detecta Maven/Gradle e roda os testes (mvn test / gradle test)."
   files: \.(java|xml|gradle|kts)$
